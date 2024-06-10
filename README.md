@@ -1,13 +1,2 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+In this project, we developed and executed scripts to interact with a Ballot smart contract. The goal was to implement functionalities that would allow users to deploy the contract, assign voting rights, cast votes, delegate votes, and query the results of the ballot. Each script was carefully designed to perform specific operations, ensuring smooth interaction with the deployed smart contract.
+The deployment script initiates the Ballot contract on the Ethereum Sepolia testnet. Following deployment, we created scripts to manage voter interactions: giving voting rights to specific addresses, enabling voters to cast their votes for chosen proposals, and allowing voters to delegate their voting power to another address. Finally, a query script was developed to fetch and display the current voting results, showing the number of proposals and the votes each proposal received. Through these scripts, we efficiently managed the complete lifecycle of the ballot process on the blockchain.
